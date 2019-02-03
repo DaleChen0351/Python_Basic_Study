@@ -1,0 +1,37 @@
+字符串中包含引号
+  message_double="Dale's world"
+  message_slash='dale\'s world'
+  message_single='"dale"'
+  # "dale"
+  
+字符串切片
+  print(message_double[0:5])
+  print(len(message_double))
+  
+字符串函数
+  print(message_double.upper())
+    lower, islower...
+  print(message_double.count('Dale'))
+    # 计算字符串中有多少个被检测字符  1
+  print(message_double.find('w'))
+    # 7  index
+  
+替换
+  message_replace="dale dale dale,hello!"
+  print(message_replace.replace('dale',' ',message_replace.count('dale')-1))
+  #     dale,hello!
+  
+格式字符串
+  greeting="hello"
+  name='dale'
+  age=15
+  方法1
+  print(greeting+', '+ name +'. welcome!')
+  方法2
+  print("{}, {}{}.welcome!".format(greeting,name,age))
+    # https://youtu.be/k9TUPpGqYTo?list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7
+  方法3
+  print(f'{name.upper()} is a boy')
+  
+帮助
+print(help(str))
