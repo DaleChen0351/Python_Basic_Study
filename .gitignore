@@ -1,2 +1,3 @@
 # venv下的所有文件
 venv/
+.idea/

@@ -17,3 +17,4 @@ plt.ylim(-5,5)
 plt.gridon =True
 #plt.yticks( [-np.pi, -np.pi/2, 0, np.pi/2, np.pi],[r'$-\pi$', r'$-\pi/2$', r'$0$', r'$+\pi/2$', r'$+\pi$'])
 plt.show()
+print("test it")
