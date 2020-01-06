@@ -1,12 +1,29 @@
 import random
 
-import antigravity
-courses = ["python","PE","Chinese","math"]
+def generate_new_particles(old_particles, weights):
+    N = len(old_particles)
+    new_particles = []
+    index = int(random.random() * N) # 任取了 0 1 2 3
+    print(index)
+    beta = 0.0
+    mw = max(weights)
+    for i in range(N):  # N = 4
+        beta += random.random() * 2.0 * mw  # 0-2 * 0.4
+        print("beta =", beta)
+        while beta > weights[index]:
+            beta -= weights[index]
+            index = (index + 1) % N
+            print ("\tbeta= %f, index = %d, weight = %f" % (beta, index, weights[index]))
+        new_particles.append(old_particles[index])
+    return new_particles
 
-random_course=random.choice(courses)
 
-print(random_course)
+if __name__ == "__main__":
 
-import os
-print(os.getcwd())
-print(os.__file__)
+    old_particles = [1, 2, 3, 4]
+    weights = [.3, 0, .4, .3]
+    new_particles = generate_new_particles(old_particles, weights)
+
+    print ("old particles =", old_particles)
+    print ("weights =", weights)
+    print ("new particles =", new_particles)
