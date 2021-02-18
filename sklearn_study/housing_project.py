@@ -4,11 +4,8 @@ from six.moves import urllib
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import StratifiedShuffleSplit
-from sklearn.model_selection import train_test_split
-from show_calcu_housing_data import calcu_corr, show_data_histgram, print_value_counts, visualizing_data,CombinedAttributeAdder
+from sklearn_study.show_calcu_housing_data import CombinedAttributeAdder
 from sklearn.preprocessing import Imputer
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelBinarizer
 
 
