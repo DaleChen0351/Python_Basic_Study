@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-students = pd.read_excel("10.xlsx") # dtype={"2016":str, "2017":str}
+students = pd.read_excel("data/10.xlsx") # dtype={"2016":str, "2017":str}
 print(students)
 students.sort_values(by="2016", ascending=False, inplace=True)
 students.plot.bar(x="Field", y=["2016","2017"], color=["orange", "red"]) # pandas的lib库

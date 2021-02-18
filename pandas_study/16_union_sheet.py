@@ -23,8 +23,8 @@ def join_sheets(A,B):
 
 
 if __name__ == "__main__":
-    students = pd.read_excel("16.xlsx",sheet_name="Sheet1")
-    scores = pd.read_excel("16.xlsx",sheet_name="Sheet2")
+    students = pd.read_excel("data/16.xlsx",sheet_name="Sheet1")
+    scores = pd.read_excel("data/16.xlsx",sheet_name="Sheet2")
 
     # table = merge_sheets_2(students,scores)
     table = join_sheets(students,scores)

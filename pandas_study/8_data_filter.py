@@ -10,7 +10,7 @@ def greater_than_80(s):
 
 
 if __name__ == "__main__":
-    students = pd.read_excel("8.xlsx", index_col="ID")
+    students = pd.read_excel("data/8.xlsx", index_col="ID")
     print(students)
     print("==============")
     # loc = locate 定位（attribute）? input  yes or no ?

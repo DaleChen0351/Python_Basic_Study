@@ -17,7 +17,7 @@ def accum_bar_h(df):
 
 
 if __name__ == "__main__":
-    users = pd.read_excel("11.xlsx")
+    users = pd.read_excel("data/11.xlsx")
     users["total"] = users.Oct + users.Nov + users.Dec # 注意！
 
     accum_bar_h(users)

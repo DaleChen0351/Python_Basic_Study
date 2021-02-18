@@ -15,7 +15,7 @@ def kde_plot(df):
     plt.xticks(range(0, 100000, 500), rotation=90)
 
 if __name__ == "__main__":
-    homes = pd.read_csv("housing.csv")
+    homes = pd.read_csv("data/housing.csv")
     print(homes.head())
     print("==========")
     print(homes.corr())

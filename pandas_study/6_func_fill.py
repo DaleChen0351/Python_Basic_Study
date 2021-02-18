@@ -13,7 +13,7 @@ def serials_mul_serials(books):
 
 if __name__ == "__main__":
     # read xlsx with index_col = ID
-    books = pd.read_excel("6.xlsx", index_col='ID')
+    books = pd.read_excel("data/6.xlsx", index_col='ID')
     print(books.head())
     # each_item_loop(books)
     # serials_mul_serials(books)

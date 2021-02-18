@@ -21,7 +21,7 @@ def matplotlib_plot_bar(df):
     plt.legend([retPlt],["Number"])
 
 if __name__ == "__main__":
-    student = pd.read_excel("9.xlsx")
+    student = pd.read_excel("data/9.xlsx")
     print(student)
     student.sort_values(by="Number",ascending=False, inplace=True)
     # pandas_plot_bar(student)

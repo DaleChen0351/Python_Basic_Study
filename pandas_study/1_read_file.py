@@ -42,7 +42,7 @@ def read_and_set_index():
 
 # skiprows = 3, usecols="C:F "
 def read_skiprows():
-    books = pd.read_excel("data.xlsx",skiprows=3,usecols="C:F", dtype={"ID":str, "InStore": str, "Data":str}) # Nan 默认是float64类型，为了后面方便改成str
+    books = pd.read_excel("data/data.xlsx",skiprows=3,usecols="C:F", dtype={"ID":str, "InStore": str, "Data":str}) # Nan 默认是float64类型，为了后面方便改成str
     print(books.head())
     start = date(2021,2,27)
     for i in books.index:
