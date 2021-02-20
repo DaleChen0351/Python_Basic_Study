@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from datetime import date, timedelta
 
-# depandence: openpyxl  xlrd
+# depandence: openpyxl  xlrd=1.2.0
 def init_df():
     ID = [1,2,3,4,5]
     Name = ["Dale","Linda", "Bob","Mike","huahua"]
