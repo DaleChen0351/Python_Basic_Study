@@ -53,6 +53,13 @@ def add_serials_as_new_row_2():
     print(df)
 
 
+# serials 访问
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
